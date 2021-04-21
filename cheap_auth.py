@@ -1,3 +1,5 @@
+from time import sleep
+
 username = "developer1"
 password = "hackme"
 
@@ -21,6 +23,7 @@ print("Welcome " + input_username + ", you are authorized in to the system")
 shut_down = input("Do you want to shut down your computer yes/no:")
 if shut_down == "yes":
     print("Shutting down your computer...")
+    sleep(5)
 elif shut_down == "no":
     become_admin = input("Do you want to become admin? yes/no:")
     if become_admin == "yes":
