@@ -1,4 +1,11 @@
-banned_words = ['blin', 'dodon']
+banned_words = [
+    'blin',
+    'wai',
+    ]
 
-# input -> any string
-# replace banned words with * character multiplied by banned word lenght
+text = input("Please enter text: ")
+
+for banned_word in banned_words:
+    text = text.replace(banned_word, "*" * len(banned_word))
+
+print(text)
